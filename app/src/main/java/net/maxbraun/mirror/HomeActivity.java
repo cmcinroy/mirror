@@ -102,7 +102,8 @@ public class HomeActivity extends Activity {
   private TextView[] newsViews = new TextView[NEWS_VIEW_IDS.length];
 
   private Weather weather;
-  private News news;
+  //private News news;
+  private Twitter news;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -118,7 +119,8 @@ public class HomeActivity extends Activity {
     }
 
     weather = new Weather(weatherUpdateListener);
-    news = new News(newsUpdateListener);
+    //news = new News(newsUpdateListener);
+    news = new Twitter(newsUpdateListener);
   }
 
   @Override
